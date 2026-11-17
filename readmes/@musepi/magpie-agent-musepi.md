@@ -57,6 +57,12 @@ agent.
   turns; magpie reports `native_endpoints` per model and this plugin follows
   them.
 
+## Design
+
+`docs/design.md` is why this plugin exists and what magpie's agent contract
+allows; `docs/plan.md` is the task list it was built from, with the verified
+results recorded in `VERIFICATION.md`.
+
 ## Develop
 
 ```sh
