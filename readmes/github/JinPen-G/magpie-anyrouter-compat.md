@@ -12,6 +12,8 @@ magpie plugin add github:JinPen-G/magpie-anyrouter-compat
 
 插件显示名为「AnyRouter 兼容」。仓库的 `magpie-plugin` topic 和 `package.json` 中的 `magpie.middleware` 提供 Magpie 插件发现及加载入口。[仓库](https://github.com/JinPen-G/magpie-anyrouter-compat)
 
+Magpie 的「发现」页从社区索引读取 GitHub 插件。仓库进入索引后，可选择「所有来源」或「GitHub 上的非官方插件」，搜索 `AnyRouter`。新仓库进入索引及本机缓存刷新的时间取决于社区同步作业，插件页也支持通过仓库地址直接安装。[Magpie 发现索引实现](https://github.com/yetone/magpie/blob/v0.1.3960/internal/plugin/catalog.go)
+
 ## 处理范围
 
 通过 Magpie `onProvider` 发送到 `anyrouter` 的 Responses 请求自动应用兼容规则，覆盖各对话及路由组中实际选中的 AnyRouter 供应商。
@@ -48,3 +50,7 @@ npm test
 测试覆盖跨对话适用范围、供应商隔离、嵌套工具定义、并行调用配对、工具加载顺序、重复处理和显式摘要回放。
 
 运行时日志使用 `anyrouter-compat` 前缀，包含变更计数。Magpie 0.1.3960 的 `onProvider` 入口及运行限制是本次宿主验证的依据。[Magpie 中间件说明](https://github.com/yetone/magpie/blob/v0.1.3960/docs/subsystems/gateway-middleware.md)
+
+## 许可证
+
+采用 MIT 许可证，允许使用、修改、分发和商业使用。分发时保留版权声明及许可证全文。[MIT 许可证](LICENSE)

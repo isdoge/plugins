@@ -7,7 +7,7 @@
 在 Magpie 搜索 **Tianshu**（插件 → 发现 → 非官方插件 · GitHub），或直接添加：
 
 ```text
-github:huiliyi37/magpie-agent-tianshu
+github:MathDD/magpie-agent-tianshu
 ```
 
 也可以从本地源码安装：
